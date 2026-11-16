@@ -96,48 +96,23 @@ Subset used in experiments:
 
 ---
 
-## Installation
+## Running the Notebook
 
-Clone the repository:
+The whole pipeline lives in one notebook, written for Google Colab with a GPU runtime.
 
-```bash
-git clone https://github.com/Rewanooo22/AttnGAN.git
-cd AttnGAN
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Training
-
-Run training:
-
-```bash
-python train.py
-```
+1. Open `AttnGAN_Bird_Text_to_Image.ipynb` in Google Colab.
+2. Set the runtime to GPU (Runtime → Change runtime type).
+3. Have your Kaggle API token (`kaggle.json`, from Kaggle → Account → Create API Token) ready. The notebook asks you to upload it, then downloads the dataset.
+4. Run the cells in order. The notebook installs its own dependencies.
 
 ---
 
 ## Project Structure
 
 ```text
-AttnGAN/
-│
-├── data/
-├── models/
-├── captions/
-├── outputs/
-├── train.py
-├── generator.py
-├── discriminator.py
-├── text_encoder.py
-├── attention.py
-├── requirements.txt
+attngan-bird-text-to-image/
+├── AttnGAN_Bird_Text_to_Image.ipynb   # Full pipeline (Google Colab)
+├── AttnGAN_Scientific_Paper.docx      # Project paper
 └── README.md
 ```
 
@@ -204,10 +179,3 @@ allowing image regions to attend selectively to relevant words in the caption.
 ## Author
 
 **Rewan Hany**
-
----
-
-## License
-
-This project is for educational and research purposes.
-
