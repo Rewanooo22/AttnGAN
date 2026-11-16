@@ -179,10 +179,3 @@ allowing image regions to attend selectively to relevant words in the caption.
 ## Author
 
 **Rewan Hany**
-
----
-
-## License
-
-This project is for educational and research purposes.
-
